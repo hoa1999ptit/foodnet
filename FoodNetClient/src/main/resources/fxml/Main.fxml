@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foodnet.foodnetclient.gui.MainController">
+    <stylesheets>
+        <URL value="@/styles/Styles.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <BorderPane fx:id="rootPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0">
+               <center>
+                  <SplitPane dividerPositions="0.18245125348189414" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" styleClass="whitePane" stylesheets="@../../../../../../../styles/Styles.css">
+                           <children>
+                              <ImageView fitHeight="109.0" fitWidth="222.0" layoutX="22.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/foodnet2.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="121.0" layoutY="13.0" prefHeight="104.0" prefWidth="226.0" text="FOODNET" textFill="#f20000">
+                                 <font>
+                                    <Font name="Cooper Black" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="signInButton" layoutX="1104.0" layoutY="22.0" mnemonicParsing="false" onAction="#onSignInClicked" style="-fx-background-color: transparent; -fx-text-fill: red; -fx-border-radius: 20px; -fx-border-width: 1px 1px 1px 1px; -fx-border-color: red;" text="Sign In" />
+                              <Button fx:id="signUpButton" layoutX="1173.0" layoutY="22.0" mnemonicParsing="false" onAction="#onSignUpClicked" style="-fx-background-color: transparent; -fx-text-fill: red; -fx-border-radius: 20px; -fx-border-width: 1px 1px 1px 1px; -fx-border-color: red;" text="Sign Up" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" styleClass="bodybackground" stylesheets="@../../../../../../../styles/Styles.css">
+                           <children>
+                              <ImageView fitHeight="628.0" fitWidth="1438.0" layoutX="-119.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/14.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </center>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </BorderPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

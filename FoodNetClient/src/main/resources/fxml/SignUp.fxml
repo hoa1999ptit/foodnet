@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foodnet.foodnetclient.gui.SignUpController">
+    <stylesheets>
+        <URL value="@/styles/Styles.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <ImageView fitHeight="856.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/1771.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="720.0" prefWidth="1280.0" styleClass="logInBackground" stylesheets="@../../../../../../../styles/Styles.css">
+               <children>
+                  <Label layoutX="869.0" layoutY="14.0" text="Sign Up">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="firstnameField" layoutX="647.0" layoutY="87.0" prefHeight="50.0" prefWidth="250.0" promptText="First Name" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" stylesheets="@../../../../../../../styles/Styles.css" />
+                  <TextField fx:id="lastnameField" layoutX="964.0" layoutY="87.0" prefHeight="50.0" prefWidth="250.0" promptText="Last Name" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" stylesheets="@../../../../../../../styles/Styles.css" />
+                  <TextField fx:id="usernameField" layoutX="647.0" layoutY="187.0" prefHeight="50.0" prefWidth="250.0" promptText="Username" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" stylesheets="@../../../../../../../styles/Styles.css" />
+                  <TextField fx:id="cityField" layoutX="647.0" layoutY="387.0" prefHeight="50.0" prefWidth="250.0" promptText="City" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" stylesheets="@../../../../../../../styles/Styles.css" />
+                  <TextField fx:id="emailField" layoutX="964.0" layoutY="187.0" prefHeight="50.0" prefWidth="250.0" promptText="Email" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" stylesheets="@../../../../../../../styles/Styles.css" />
+                  <TextField fx:id="addressField" layoutX="964.0" layoutY="387.0" prefHeight="50.0" prefWidth="250.0" promptText="Address" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" stylesheets="@../../../../../../../styles/Styles.css" />
+                  <TextField fx:id="phoneNumberField" layoutX="647.0" layoutY="487.0" prefHeight="50.0" prefWidth="250.0" promptText="Phone Number" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" stylesheets="@../../../../../../../styles/Styles.css" />
+                  <PasswordField fx:id="passwordField" layoutX="647.0" layoutY="287.0" prefHeight="51.0" prefWidth="251.0" promptText="Password" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" />
+                  <PasswordField fx:id="passwordRepeatField" layoutX="964.0" layoutY="287.0" prefHeight="51.0" prefWidth="251.0" promptText="Repeat Password" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" />
+                  <Button layoutX="964.0" layoutY="487.0" mnemonicParsing="false" onAction="#onSignUp" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: red; -fx-text-fill: white;" text="Sign Up" />
+                  <Label layoutX="964.0" layoutY="548.0" text="Already have an account?">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1163.0" layoutY="548.0" onMouseClicked="#onSignIn" text="Sign In" textFill="RED">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="685.0" layoutY="574.0" prefHeight="26.0" prefWidth="174.0" text="Be a FoodNet Partner">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="648.0" layoutY="622.0" mnemonicParsing="false" onAction="#onCreateBusiness" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: red; -fx-text-fill: white;" text="Create Your Bussines Account" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

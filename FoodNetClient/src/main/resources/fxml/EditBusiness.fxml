@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1080.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="foodnet.foodnetclient.gui.EditBusinessController">
+    <stylesheets>
+        <URL value="@/styles/Styles.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="720.0" prefWidth="1080.0">
+         <children>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="720.0" prefWidth="1080.0" styleClass="logInBackground" stylesheets="@../../../../../../../AppData/Local/styles/Styles.css">
+               <children>
+                  <Label layoutX="572.0" layoutY="30.0" text="Bussiness Info">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nameField" layoutX="366.0" layoutY="151.0" prefHeight="50.0" prefWidth="250.0" promptText="Bussines Name" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" />
+                  <Text layoutX="366.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bussines Name" />
+                  <TextField fx:id="usernameField" layoutX="712.0" layoutY="151.0" prefHeight="50.0" prefWidth="250.0" promptText="Username" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" />
+                  <TextField fx:id="emailField" layoutX="366.0" layoutY="261.0" prefHeight="50.0" prefWidth="250.0" promptText="Email" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" />
+                  <TextField fx:id="cityField" layoutX="712.0" layoutY="261.0" prefHeight="50.0" prefWidth="250.0" promptText="City" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" />
+                  <TextField fx:id="addressField" layoutX="366.0" layoutY="371.0" prefHeight="50.0" prefWidth="250.0" promptText="Address" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" />
+                  <TextField fx:id="phoneNumberField" layoutX="712.0" layoutY="371.0" prefHeight="50.0" prefWidth="250.0" promptText="Phone Number" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" />
+                  <TextField fx:id="openingTimeField" layoutX="366.0" layoutY="481.0" prefHeight="50.0" prefWidth="120.0" promptText="Open time" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" />
+                  <PasswordField fx:id="passwordField" layoutX="712.0" layoutY="481.0" prefHeight="50.0" prefWidth="250.0" promptText="Password" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" />
+                  <Label layoutX="366.0" layoutY="227.0" text="Email" />
+                  <Label layoutX="712.0" layoutY="227.0" text="City" />
+                  <Label layoutX="366.0" layoutY="336.0" text="Address" />
+                  <Label layoutX="712.0" layoutY="336.0" text="Phone Number" />
+                  <Label layoutX="366.0" layoutY="447.0" text="Open time" />
+                  <Label layoutX="713.0" layoutY="447.0" text="Password" />
+                  <Label layoutX="713.0" layoutY="121.0" text="Username" />
+                  <Button layoutX="712.0" layoutY="576.0" mnemonicParsing="false" onAction="#onUpdateButtonClicked" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: red; -fx-text-fill: white;" text="Update Account" />
+                  <TextField fx:id="closingTimeField" layoutX="491.0" layoutY="481.0" prefHeight="50.0" prefWidth="120.0" promptText="Close time" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" />
+                  <Label layoutX="491.0" layoutY="447.0" text="Close time" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

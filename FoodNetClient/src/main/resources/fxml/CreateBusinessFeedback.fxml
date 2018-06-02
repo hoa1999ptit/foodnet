@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foodnet.foodnetclient.gui.CreateBusinessFeedbackController">
+   <children>
+      <Pane prefHeight="720.0" prefWidth="1080.0">
+         <children>
+            <ImageView fitHeight="720.0" fitWidth="1080.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/sandwich_1339-1114.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="376.0" layoutY="26.0" prefHeight="486.0" prefWidth="618.0">
+               <children>
+                  <TextField fx:id="subjectField" layoutX="42.0" layoutY="101.0" prefHeight="25.0" prefWidth="215.0" promptText="Subject" />
+                  <TextField fx:id="ratingField" layoutX="388.0" layoutY="101.0" prefHeight="25.0" prefWidth="31.0" promptText="Rating" text="5" />
+                  <TextArea fx:id="contentArea" layoutX="42.0" layoutY="177.0" prefHeight="132.0" prefWidth="535.0" promptText="Enter your idea..." />
+                  <Button fx:id="submitBtn" layoutX="400.0" layoutY="371.0" mnemonicParsing="false" onAction="#onFeedbackSubmit" prefHeight="39.0" prefWidth="149.0" style="-fx-background-color: #f20000;" text="Submit" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="60.0" layoutY="33.0" text="Business FeedBack" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="345.0" layoutY="105.0" text="Rating:" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

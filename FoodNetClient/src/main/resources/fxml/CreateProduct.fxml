@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1060.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="foodnet.foodnetclient.gui.CreateProductController">
+    <stylesheets>
+        <URL value="@/styles/Styles.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="720.0" prefWidth="1060.0">
+         <children>
+            <Pane layoutX="47.0" layoutY="33.0" prefHeight="390.0" prefWidth="353.0">
+               <children>
+                  <TextField fx:id="nameField" layoutX="45.0" layoutY="34.0" prefHeight="25.0" prefWidth="270.0" />
+                  <TextField fx:id="priceField" layoutX="45.0" layoutY="101.0" prefHeight="25.0" prefWidth="150.0" promptText="\$" />
+                  <Text layoutX="43.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+                  <Text layoutX="46.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+                  <TextArea fx:id="descriptionArea" layoutX="43.0" layoutY="232.0" prefHeight="76.0" prefWidth="270.0" />
+                  <ComboBox fx:id="categoryBox" layoutX="45.0" layoutY="165.0" prefWidth="150.0" />
+                  <Text layoutX="48.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category" />
+                  <Text layoutX="46.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+                  <Button layoutX="262.0" layoutY="336.0" mnemonicParsing="false" onAction="#onCreate" text="Create" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

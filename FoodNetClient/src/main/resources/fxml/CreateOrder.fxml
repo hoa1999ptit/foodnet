@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1080.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foodnet.foodnetclient.gui.CreateOrderController">
+    <stylesheets>
+        <URL value="@/styles/Styles.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="720.0" prefWidth="1080.0">
+         <children>
+            <TableView fx:id="productsTable" editable="true" layoutX="14.0" layoutY="14.0" prefHeight="658.0" prefWidth="738.0">
+              <columns>
+                  <TableColumn fx:id="nameColumn" editable="false" prefWidth="137.0" text="Name" />
+                  <TableColumn fx:id="descriptionColumn" editable="false" prefWidth="397.0" text="Description" />
+                  <TableColumn fx:id="priceColumn" editable="false" prefWidth="109.0" text="Price" />
+                  <TableColumn fx:id="categoryColumn" editable="false" prefWidth="94.0" text="Category" />
+              </columns>
+            </TableView>
+            <Label layoutX="774.0" layoutY="36.0" text="Order">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ListView fx:id="ordersListView" layoutX="763.0" layoutY="66.0" prefHeight="500.0" prefWidth="299.0" />
+            <Label layoutX="763.0" layoutY="582.0" text="Total:" />
+            <TextField fx:id="totalField" editable="false" layoutX="813.0" layoutY="578.0" prefHeight="25.0" prefWidth="236.0" />
+            <Button layoutX="1006.0" layoutY="617.0" mnemonicParsing="false" onAction="#onSendOrder" text="Send" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

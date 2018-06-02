@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1060.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="foodnet.foodnetclient.gui.SoftwareFeedbackController">
+    <stylesheets>
+        <URL value="@/styles/Styles.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="720.0" prefWidth="1060.0">
+         <children>
+            <Pane layoutX="14.0" layoutY="14.0" prefHeight="426.0" prefWidth="649.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="26.0" text=" Software FeedBack">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="subjectField" layoutX="24.0" layoutY="79.0" prefHeight="25.0" prefWidth="190.0" promptText="Subject" />
+                  <TextArea fx:id="contentArea" layoutX="24.0" layoutY="158.0" prefHeight="123.0" prefWidth="511.0" promptText="Enter your idea..." />
+                  <Button fx:id="submitBtn" layoutX="380.0" layoutY="334.0" mnemonicParsing="false" onAction="#onFeedbackSubmit" prefHeight="38.0" prefWidth="155.0" text="Submit" />
+                  <TextField fx:id="ratingField" layoutX="363.0" layoutY="79.0" prefHeight="25.0" prefWidth="43.0" promptText="Rating" text="5" />
+                  <Label layoutX="325.0" layoutY="83.0" text="Rating:" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

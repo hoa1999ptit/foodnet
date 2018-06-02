@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1060.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="foodnet.foodnetclient.gui.UserInfoController">
+    <stylesheets>
+        <URL value="@/styles/Styles.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="720.0" prefWidth="1060.0">
+         <children>
+            <Label fx:id="fullnameLabel" layoutX="56.0" layoutY="34.0" text="Fullname">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Separator layoutX="14.0" layoutY="68.0" prefHeight="1.0" prefWidth="1018.0" />
+            <Label layoutX="42.0" layoutY="89.0" text="Username:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="116.0" text="Email:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="143.0" text="City:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="170.0" text="Address:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="usernameLabel" layoutX="131.0" layoutY="89.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="emailLabel" layoutX="95.0" layoutY="116.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="cityLabel" layoutX="83.0" layoutY="143.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="addressLabel" layoutX="116.0" layoutY="170.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="14.0" layoutY="253.0" prefHeight="3.0" prefWidth="494.0" />
+            <Button layoutX="24.0" layoutY="264.0" mnemonicParsing="false" onAction="#onEdit" text="Edit" />
+            <Button layoutX="935.0" layoutY="39.0" mnemonicParsing="false" onAction="#onDelete" text="Delete" />
+            <ImageView fitHeight="289.0" fitWidth="284.0" layoutX="615.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/users.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="42.0" layoutY="197.0" text="Phone Number:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="phoneNumberLabel" layoutX="173.0" layoutY="197.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

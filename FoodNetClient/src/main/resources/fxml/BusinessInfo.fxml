@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1080.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foodnet.foodnetclient.gui.BusinessInfoController">
+    <stylesheets>
+        <URL value="@/styles/Styles.css" />
+    </stylesheets>
+   <children>
+      <SplitPane dividerPositions="0.7411873840445269" prefHeight="720.0" prefWidth="1080.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="687.0" prefWidth="796.0">
+               <children>
+                  <Accordion layoutX="14.0" layoutY="14.0" prefHeight="686.0" prefWidth="765.0">
+                    <panes>
+                      <TitledPane animated="false" prefHeight="636.0" prefWidth="765.0" text="Posts">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ListView fx:id="postsListView" layoutX="14.0" layoutY="14.0" prefHeight="608.0" prefWidth="734.0" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Products">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView fx:id="productsTable" layoutX="14.0" layoutY="14.0" prefHeight="610.0" prefWidth="738.0">
+                                      <columns>
+                                        <TableColumn fx:id="nameColumn" prefWidth="170.0" text="Name" />
+                                        <TableColumn fx:id="descriptionColumn" prefWidth="375.0" text="Description" />
+                                          <TableColumn fx:id="priceColumn" prefWidth="84.0" text="Price" />
+                                          <TableColumn fx:id="categoryColumn" prefWidth="108.0" text="Category" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="685.0" prefWidth="276.0">
+               <children>
+                  <Pane layoutX="19.0" layoutY="14.0" prefHeight="200.0" prefWidth="237.0">
+                     <children>
+                        <Label fx:id="nameField" layoutX="14.0" layoutY="14.0" text="Name">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="19.0" layoutY="44.0" prefWidth="200.0" />
+                        <Label fx:id="oraHapjesField" layoutX="14.0" layoutY="63.0" prefHeight="17.0" prefWidth="49.0" text="10:00" />
+                        <Label layoutX="45.0" layoutY="63.0" prefHeight="17.0" prefWidth="3.0" text="-" />
+                        <Label fx:id="oraMbylljesField" layoutX="55.0" layoutY="63.0" text="17:00" />
+                        <Label fx:id="cityField" layoutX="14.0" layoutY="92.0" text="Vushtrri">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="roadField" layoutX="14.0" layoutY="112.0" text="Rruga Iliria">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="phoneNumberField" layoutX="14.0" layoutY="151.0" text="+3774545455">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="13.0" layoutY="185.0" prefWidth="200.0" />
+                     </children>
+                  </Pane>
+                  <VBox layoutX="19.0" layoutY="202.0" prefHeight="236.0" prefWidth="200.0">
+                     <children>
+                        <Pane fx:id="usersPane" prefHeight="111.0" prefWidth="200.0">
+                           <children>
+                              <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onOrder" text="Order" />
+                              <Button layoutX="12.0" layoutY="48.0" mnemonicParsing="false" onAction="#onWriteFeedback" text="Write Feedback" />
+                              <Button fx:id="favoritesButton" layoutX="71.0" layoutY="14.0" mnemonicParsing="false" onAction="#onAddFavorite" text="Add Favorite" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="ownerPane" prefHeight="172.0" prefWidth="200.0">
+                           <children>
+                              <Button layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onAction="#onEditBusiness" text="Edit" />
+                              <Button layoutX="124.0" layoutY="9.0" mnemonicParsing="false" onAction="#onDeleteBusiness" text="Delete" />
+                              <Button layoutX="109.0" layoutY="42.0" mnemonicParsing="false" onAction="#onCreateNewPost" text="New Post" />
+                              <Button layoutX="14.0" layoutY="77.0" mnemonicParsing="false" onAction="#onReadFeedback" text="Read Feedback" />
+                              <Button layoutX="123.0" layoutY="77.0" mnemonicParsing="false" onAction="#onReadOrders" text="Orders" />
+                              <Button layoutX="14.0" layoutY="42.0" mnemonicParsing="false" onAction="#onCreateProduct" text="New Product" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

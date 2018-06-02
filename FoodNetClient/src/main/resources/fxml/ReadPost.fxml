@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1060.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foodnet.foodnetclient.gui.ReadPostController">
+    <stylesheets>
+        <URL value="@/styles/Styles.css" />
+    </stylesheets>
+   <children>
+      <ScrollPane layoutX="7.0" layoutY="14.0" prefHeight="720.0" prefWidth="1050.0">
+         <content>
+            <Pane prefHeight="1200.0" prefWidth="1046.0">
+               <children>
+                  <Label fx:id="titleLabel" layoutX="19.0" layoutY="14.0" text="Title">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="contentLabel" alignment="TOP_LEFT" layoutX="19.0" layoutY="53.0" prefHeight="509.0" prefWidth="1014.0" text="Content" />
+                  <TextArea fx:id="commentTextArea" layoutX="19.0" layoutY="623.0" prefHeight="113.0" prefWidth="581.0" promptText="Write Comment" />
+                  <Button fx:id="commentBtn" layoutX="617.0" layoutY="623.0" mnemonicParsing="false" onAction="#onComment" text="Comment" />
+                  <ListView fx:id="commentsListView" layoutX="19.0" layoutY="747.0" prefHeight="396.0" prefWidth="1006.0" />
+                  <Button fx:id="likesBtn" layoutX="19.0" layoutY="579.0" mnemonicParsing="false" onAction="#onLike" text="Like" />
+                  <Label fx:id="likesLabel" layoutX="116.0" layoutY="583.0" text="Likes" />
+                  <Label layoutX="79.0" layoutY="583.0" text="Likes:" />
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

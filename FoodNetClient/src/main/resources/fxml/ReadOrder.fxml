@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="780.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="foodnet.foodnetclient.gui.ReadOrderController">
+    <stylesheets>
+        <URL value="@/styles/Styles.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="720.0" prefWidth="780.0">
+         <children>
+            <TableView fx:id="ordersTable" layoutX="399.0" layoutY="41.0" prefHeight="569.0" prefWidth="337.0">
+              <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="170.0" text="Name" />
+                <TableColumn fx:id="priceColumn" minWidth="5.0" prefWidth="78.0" text="Price" />
+                  <TableColumn fx:id="categoryColumn" prefWidth="88.0" text="Category" />
+              </columns>
+            </TableView>
+            <Separator layoutX="386.0" layoutY="31.0" orientation="VERTICAL" prefHeight="661.0" prefWidth="7.0" />
+            <Label layoutX="399.0" layoutY="625.0" text="Total:" />
+            <Label layoutX="30.0" layoutY="52.0" prefHeight="27.0" prefWidth="86.0" text="Customer">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="fullnameLabel" layoutX="30.0" layoutY="98.0" text="Fullname">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Separator layoutX="16.0" layoutY="87.0" prefHeight="3.0" prefWidth="337.0" />
+            <Label fx:id="cityLabel" layoutX="30.0" layoutY="123.0" text="City">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="roadLabel" layoutX="30.0" layoutY="148.0" text="Road">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="phoneNumberLabel" layoutX="30.0" layoutY="173.0" text="PhoneNumber">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="totalField" editable="false" layoutX="452.0" layoutY="621.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

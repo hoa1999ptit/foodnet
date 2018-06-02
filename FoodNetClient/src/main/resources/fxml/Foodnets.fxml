@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1080.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foodnet.foodnetclient.gui.FoodnetsController">
+    <stylesheets>
+        <URL value="@/styles/Styles.css" />
+    </stylesheets>
+   <children>
+      <BorderPane prefHeight="720.0" prefWidth="1060.0">
+         <center>
+            <TableView fx:id="businessesTable" prefHeight="680.0" prefWidth="854.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="emriColumn" prefWidth="136.0" text="Emri" />
+                <TableColumn fx:id="qytetiColumn" prefWidth="133.0" text="Qyteti" />
+              </columns>
+            </TableView>
+         </center>
+         <right>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="14.0" layoutY="8.0" text="Favorites">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="favoritesListView" layoutY="54.0" prefHeight="612.0" prefWidth="200.0" />
+               </children>
+            </Pane>
+         </right>
+         <top>
+            <Pane prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="searchField" layoutX="14.0" layoutY="8.0" onInputMethodTextChanged="#onSearch" onKeyReleased="#onSearchReleased" prefHeight="25.0" prefWidth="494.0" promptText="Search Businesses" />
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

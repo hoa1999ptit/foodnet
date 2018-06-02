@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="200.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foodnet.foodnetclient.gui.UserSidebarController">
+    <stylesheets>
+        <URL value="@/styles/Styles.css" />
+    </stylesheets>
+   <children>
+      <VBox prefHeight="720.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/foodnet2.png" />
+               </image>
+            </ImageView>
+            <Pane onMouseClicked="#onUserInfo" prefHeight="64.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/round-user.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="88.0" layoutY="20.0" text="User Info">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane onMouseClicked="#onFoodnets" prefHeight="64.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/dinner.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="89.0" layoutY="20.0" text="Foodnets">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane onMouseClicked="#onLogout" prefHeight="64.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="89.0" layoutY="20.0" text="Log Out">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="120.0" prefWidth="200.0" />
+            <Pane fx:id="raportsPane" onMouseClicked="#onShowRaports" prefHeight="64.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/newspaper.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="89.0" layoutY="20.0" text="Raports">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane onMouseClicked="#onCreateFeedback" prefHeight="64.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/survey.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="89.0" layoutY="20.0" text="Feedback">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

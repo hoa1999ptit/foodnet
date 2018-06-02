@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="foodnet.foodnetclient.gui.BusinessSignUpController">
+    <stylesheets>
+        <URL value="@/styles/Styles.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <ImageView fitHeight="859.0" fitWidth="1292.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/1771.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="-2.0" layoutY="-2.0" prefHeight="720.0" prefWidth="1280.0" styleClass="logInBackground" stylesheets="@../../../../../../../styles/Styles.css">
+               <children>
+                  <Label layoutX="862.0" layoutY="30.0" text="Create Bussiness">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nameField" layoutX="678.0" layoutY="122.0" prefHeight="50.0" prefWidth="250.0" promptText="Bussiness Name" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" stylesheets="@../../../../../../../styles/Styles.css" />
+                  <TextField fx:id="usernameField" layoutX="995.0" layoutY="122.0" prefHeight="50.0" prefWidth="250.0" promptText="Username" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" stylesheets="@../../../../../../../styles/Styles.css" />
+                  <TextField fx:id="emailField" layoutX="678.0" layoutY="222.0" prefHeight="50.0" prefWidth="250.0" promptText="Email" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" stylesheets="@../../../../../../../styles/Styles.css" />
+                  <TextField fx:id="cityField" layoutX="995.0" layoutY="222.0" prefHeight="50.0" prefWidth="250.0" promptText="City" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" stylesheets="@../../../../../../../styles/Styles.css" />
+                  <TextField fx:id="addressField" layoutX="995.0" layoutY="422.0" prefHeight="50.0" prefWidth="250.0" promptText="Address" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" stylesheets="@../../../../../../../styles/Styles.css" />
+                  <TextField fx:id="phoneNumberField" layoutX="678.0" layoutY="422.0" prefHeight="50.0" prefWidth="250.0" promptText="Phone Number" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" stylesheets="@../../../../../../../styles/Styles.css" />
+                  <PasswordField fx:id="passwordField" layoutX="678.0" layoutY="322.0" prefHeight="51.0" prefWidth="251.0" promptText="Password" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" />
+                  <PasswordField fx:id="repeatPasswordField" layoutX="995.0" layoutY="322.0" prefHeight="51.0" prefWidth="251.0" promptText="Repeat Password" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" />
+                  <Button layoutX="996.0" layoutY="522.0" mnemonicParsing="false" onAction="#onSignUp" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: red; -fx-text-fill: white;" text="Sign Up" />
+                  <Label layoutX="995.0" layoutY="611.0" text="Already have an account?">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1187.0" layoutY="611.0" onMouseClicked="#onSignIn" text="Sign In" textFill="RED">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="openingTimeField" layoutX="678.0" layoutY="522.0" prefHeight="50.0" prefWidth="125.0" promptText="Open Time" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" stylesheets="@../../../../../../../styles/Styles.css" />
+                  <TextField fx:id="closingTimeField" layoutX="804.0" layoutY="522.0" prefHeight="50.0" prefWidth="125.0" promptText="Close Time" style="-fx-border-color: red; -fx-border-width: 0px 0px 4px 0px;" stylesheets="@../../../../../../../styles/Styles.css" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

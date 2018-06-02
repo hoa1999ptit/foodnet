@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="foodnet.foodnetclient.gui.SignInController">
+    <stylesheets>
+        <URL value="@/styles/Styles.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <ImageView fitHeight="870.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/1771.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="-2.0" layoutY="-2.0" prefHeight="720.0" prefWidth="1280.0" styleClass="logInBackground" stylesheets="@../../../../../../../styles/Styles.css">
+               <children>
+                  <Label layoutX="936.0" layoutY="97.0" prefHeight="50.0" prefWidth="93.0" text="Sign In">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameField" layoutX="871.0" layoutY="181.0" prefHeight="50.0" prefWidth="250.0" promptText="Username" style="-fx-background-color: white; -fx-border-width: 0px 0px 4px 0px; -fx-border-color: red;" />
+                  <PasswordField fx:id="passwordField" layoutX="871.0" layoutY="277.0" prefHeight="49.0" prefWidth="251.0" promptText="Password" style="-fx-border-width: 0px 0px 4px 0px; -fx-border-color: red;" />
+                  <Button layoutX="872.0" layoutY="367.0" mnemonicParsing="false" onAction="#onSignIn" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: red; -fx-text-fill: white;" text="Sign In" />
+                  <Button layoutX="871.0" layoutY="450.0" mnemonicParsing="false" onAction="#onSignInAsBusiness" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: red; -fx-text-fill: white;" text="Sign In as Bussines" />
+                  <Label layoutX="871.0" layoutY="515.0" text="New to FoodNet?" />
+                  <Label layoutX="996.0" layoutY="515.0" onMouseClicked="#onCreateAccount" text="Create an Account" textFill="RED" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
