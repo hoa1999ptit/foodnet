@@ -5,6 +5,8 @@
  */
 package foodnet.foodnetserver.rest.services;
 
+import java.nio.file.FileSystems;
+import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.HashMap;
@@ -30,8 +32,13 @@ public class RaportsService {
     @Autowired
     private DataSource dataSource;
     
-    private final String RAPORTS_DIR = "C:\\Users\\Eustass\\Documents\\NetBeansProjects\\FoodNetServer\\raports\\";
-    private final String EXTENSION = ".jrxml";
+    private static final String RAPORTS_DIR;
+    private static final String EXTENSION = ".jrxml";
+    
+    static {
+        RAPORTS_DIR = Paths.get(FileSystems.getDefault().getPath("").toAbsolutePath().toString(), "raports").toString();
+        System.out.println("RAPORTS_DIR:" + RAPORTS_DIR);
+    }
     
     public Connection getConnection() {
         try {
@@ -45,9 +52,8 @@ public class RaportsService {
     public byte[] getRaportFile(String filename) {
         Map<String, Object> parameters = new HashMap<>();
         try {
-            JasperReport jasperReport = JasperCompileManager.compileReport(RAPORTS_DIR + filename + EXTENSION);
+            JasperReport jasperReport = JasperCompileManager.compileReport(Paths.get(RAPORTS_DIR, filename + EXTENSION).toString());
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, getConnection());
-            JasperExportManager.exportReportToPdfFile(jasperPrint, "C:\\Users\\Eustass\\Desktop\\Test.pdf");
             byte[] generatedPdf = JasperExportManager.exportReportToPdf(jasperPrint);
             System.out.println("Generated PDF length: " + generatedPdf.length);
             return generatedPdf;
